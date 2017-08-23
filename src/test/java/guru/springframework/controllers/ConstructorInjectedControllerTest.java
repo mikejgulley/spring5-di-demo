@@ -14,6 +14,7 @@ public class ConstructorInjectedControllerTest {
 
     @Before
     public void setUp() throws Exception {
+        // Pass in new instance of the Implementation
         this.constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 

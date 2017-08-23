@@ -3,10 +3,18 @@ package guru.springframework.controllers;
 import guru.springframework.services.GreetingService;
 import guru.springframework.services.GreetingServiceImpl;
 
-/**
- * Created by jt on 5/24/17.
- */
-public class GetterInjectedController {
+public class SetterInjectedController {
+    // Don't do this with the impl, use the interface!!!
+//    private GreetingServiceImpl greetingService;
+//
+//    public String sayHello(){
+//        return greetingService.sayGreeting();
+//    }
+//
+//    public void setGreetingService(GreetingServiceImpl greetingService) {
+//        this.greetingService = greetingService;
+//    }
+
     private GreetingService greetingService;
 
     public String sayHello(){
