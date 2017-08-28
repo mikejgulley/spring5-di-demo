@@ -9,19 +9,19 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by jt on 5/24/17.
  */
-public class SetterInjectedControllerTest {
+public class GetterInjectedControllerTest {
 
-    private SetterInjectedController setterInjectedController;
+    private GetterInjectedController getterInjectedController;
 
     @Before
     public void setUp() throws Exception {
-        this.setterInjectedController = new SetterInjectedController();
+        this.getterInjectedController = new GetterInjectedController();
         // If you comment out the line below, you'll get an NPE
-        this.setterInjectedController.setGreetingService(new GreetingServiceImpl());
+        this.getterInjectedController.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
     public void testGreeting() throws Exception {
-        assertEquals(GreetingServiceImpl.HELLO_GURUS, setterInjectedController.sayHello());
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, getterInjectedController.sayHello());
     }
 }
